@@ -1,48 +1,104 @@
-/* src/index.css */
-
 body {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  background-color: #212121;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
-#root {
-  width: 100%;
-  height: 100%;
+nav {
+  padding: 20px;
 }
 
-ul {
-  padding: 0;
-  display: flex;
+nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
 }
 
-li {
-  margin-right: 16px;
+nav a {
+  color: #5c6ef8;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px 40px;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+.mailbox-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
 }
 
 .mail-box {
-  border: 2px solid white;
-  padding: 20px;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  color: #5c6ef8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mail-box:hover {
+  background-color: #2a2a2a;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  max-width: 600px;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-label,
-button {
-  margin: 16px 0px;
+label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+input, select, textarea {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #5c6ef8;
+}
+
+button[type="submit"] {
+  background-color: #5c6ef8;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-input,
-select,
-textarea {
-  padding: 8px;
-}
-
-button {
-  background-color: #535bf2;
+button[type="submit"]:hover {
+  background-color: #4a5be0;
 }
